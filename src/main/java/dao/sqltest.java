@@ -1,6 +1,5 @@
 package dao;
 
-import classes.Mails;
 import org.apache.ibatis.session.SqlSession;
 import utilss.MybatisUtils;
 
