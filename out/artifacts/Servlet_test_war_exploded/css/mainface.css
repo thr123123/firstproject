@@ -1,0 +1,41 @@
+.head {
+	display: flex;
+	border-radius: 60%;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+* {
+	list-style: none;
+}
+.leftmain {
+	border-right: solid;
+	width: 250px;
+	height: 800px;
+}
+.main {
+	display: flex;
+}
+body {
+	background-color: aquamarine;
+}
+.rightmain{
+	margin-left:20px;
+	width:70%;
+	margin-top:20px;
+}
+#bg {
+	font-family: "萝莉体 第二版", serif;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	border-bottom: solid;
+}
+span{
+	margin-right:10px;
+}
+.welcome {
+	/* margin-left:15%; */
+	padding-left: 20%;
+	border-bottom: solid;
+}

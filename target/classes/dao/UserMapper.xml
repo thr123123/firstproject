@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="dao.UserDao">
+    <!--select查询语句-->
+    <select id="getUserList" resultType="classes.User" parameterType="String"># 返回用户列表
+        select * from user where id!=#{id}
+    </select>
+    <select id="getUserById" parameterType="String" resultType="classes.User"># 查找指定用户
+        select * from user where id=#{id}
+    </select>
+    <select id="getUserId" parameterType="String" resultType="String"># 查找用户名是否存在
+        select id from user where id=#{id}
+    </select>
+    <insert id="addUser" parameterType="classes.User"># 添加新用户
+        insert into user(id, pwd, isadmin) VALUES (#{id},#{pwd},#{isadmin})
+    </insert>
+    <delete id="delUser" parameterType="String">
+        delete from user where id=#{id} limit 1
+    </delete>
+</mapper>

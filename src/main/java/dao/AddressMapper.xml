@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.AddressDao">
+    <select id="getAlladdress" parameterType="String" resultType="String">
+        select id
+        from address_list
+        where use_id = #{use_id}
+    </select>
+    <insert id="insertAddress" parameterType="classes.address">
+        insert into address_list(id, use_id)
+        values (#{id}, #{use_id})
+    </insert>
+    <delete id="deleteAddress" parameterType="classes.address">
+        delete from address_list where id=#{id} and use_id=#{use_id} limit 1
+    </delete>
+    <select id="getUserbyId" parameterType="String" resultType="String">
+        select id from address_list where id=#{id} and use_id=#{uid}
+    </select>
+    <delete id="delAddr" parameterType="String">
+        delete from address_list where id=#{id} or use_id=#{id} limit 1
+    </delete>
+</mapper>

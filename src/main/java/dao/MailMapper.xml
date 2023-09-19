@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="dao.MailDao">
+    <!--select查询语句-->
+    <select id="getAllDraftMails" resultType="classes.Mails" parameterType="String">
+        select *
+        from draft_list
+        where from_id = #{from_id}
+    </select>
+    <select id="getAllSendMails" parameterType="String" resultType="classes.Mails">
+        select *
+        from receive_list
+        where from_id = #{from_id}
+    </select>
+    <select id="getAllReceiveMails" parameterType="String" resultType="classes.Mails">
+        select *
+        from receive_list
+        where to_id = #{to_id}
+    </select>
+    <insert id="addReceiveMails" parameterType="classes.Mails">
+        insert into receive_list(id,theme,email_Date,from_id,to_id) values (#{id},#{theme},#{email_Date},#{from_id},#{to_id})
+    </insert>
+    <insert id="addDraftMails" parameterType="classes.Mails">
+        insert into draft_list(id,theme,email_Date,from_id,to_id) values(#{id},#{theme},#{email_Date},#{from_id},#{to_id})
+    </insert>
+    <delete id="delReceiveMails" parameterType="String">
+        delete from receive_list where to_id=#{id} limit 1
+    </delete>
+    <delete id="delDraftMails" parameterType="String">
+        delete
+        from draft_list
+        where from_id=#{id}
+        limit 1
+    </delete>
+    <select id="getDraftMail" parameterType="int" resultType="classes.Mails">
+        select * from draft_list where id=#{id}
+    </select>
+    <select id="getMail" parameterType="int" resultType="classes.Mails">
+        select * from receive_list where id=#{id}
+    </select>
+    <update id="updateMail">
+        update draft_list
+        set theme=#{theme},
+            to_id=#{to_id}
+        where id = #{id}
+    </update>
+</mapper>

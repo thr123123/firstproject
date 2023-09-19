@@ -1,0 +1,116 @@
+ul {
+	display: block;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.F {
+	height: 24px;
+	border-bottom: 1px solid #e3e6eb;
+	font-weight: normal;
+	clear: both;
+	background-color: #fff;
+}
+
+.F .toarea .M {
+	border-bottom-width: 1px;
+}
+
+.M{
+	background-color: #F3F3F3;
+}
+
+table.tt {
+	border-top: 1px solid #fff;
+	color: #3b3b3b;
+}
+
+table {
+	display: table;
+	border-collapse: separate;
+	box-sizing: border-box;
+	text-indent: initial;
+	border-spacing: 2px;
+	border-color: gray;
+}
+
+td {
+	font-family: "lucida Grande", Verdana, "Microsoft YaHei", serif;
+	font-size: 12px;
+	-webkit-font-smoothing: subpixel-antialiased;
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+.ts{
+	width: 200px;
+
+}
+
+td.o_title2 {
+	background-color: rgb(22, 209, 50);
+	margin: 0;
+	padding: 0 0 0 12px;
+}
+
+.nu {
+	padding-left: 10px;
+	width: 20px;
+}
+
+.tf {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+td.l {
+	padding-top: 2px;
+	cursor: pointer;
+}
+
+table.i .bold .tf .nu {
+	font-weight: bold;
+}
+
+table.i {
+	table-layout: fixed;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+.no {
+	font-weight: normal;
+	color: #a0a0a0;
+}
+
+table.i td.tl {
+	width: 135px;
+	padding-right: 12px;
+}
+
+table.i td.dt {
+	width: 200px;
+	white-space: nowrap;
+}
+
+table.i td.fg_n {
+	width: 16px;
+}
+
+table.i td.gt .theme {
+	text-decoration: none;
+}
+
+.theme {
+	font-weight: bold;
+	background-color: bisque;
+	color: #000;
+}

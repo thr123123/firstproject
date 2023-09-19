@@ -1,0 +1,83 @@
+.back {
+	margin: 5% 20% 20%;
+	border-style: solid solid solid solid;
+	border-radius: 25px;
+	background-color: #9dff8d;
+	width:65%;
+	box-shadow: 10px 10px 20px 10px rgba(25, 44, 187, 0.379);
+}
+
+body {
+	background: linear-gradient(0deg,
+			rgba(255, 192, 0, 1),
+			rgba(60, 182, 252, 1));
+}
+input{
+	height: 24px;
+	padding:0 7px;
+	font-size:13px;
+	color:#666;
+	border:1px soild #ddd;
+}
+.inp{
+	width:296px;
+	height: 30px;
+	border:1px solid #ccc;
+}
+
+.maintext {
+	color: transparent;
+	background-image:
+	-webkit-linear-gradient(
+		0deg,
+		yellow,
+		red 10%,
+		green
+	);
+	font-size: 40px;
+	margin-bottom:10%;
+	-webkit-background-clip:text;
+	font-family: "萝莉体 第二版", serif;
+}
+
+.bb {
+	display: block;
+	margin-left: 30%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	font-size:20px;
+}
+p{
+	color: red;
+	font-size:15px;
+	
+}
+.button {
+	margin-bottom: 10%;
+	margin-left: 30%;
+	margin-right:30px;
+}
+
+.login {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 194px;
+	height: 40px;
+	cursor: pointer;
+	color: #18191c;
+	background: #fff;
+	border: 1px solid #e3e5e7;
+	border-radius: 8px;
+}
+
+.register {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 194px;
+	height: 40px;
+	cursor: pointer;
+	color: #fff;
+	background: #00aeec;
+	border-radius: 8px;
+	margin-right:10%;
+}

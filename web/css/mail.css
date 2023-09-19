@@ -1,0 +1,44 @@
+*{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.mail-message{
+    width: 70%;
+    background-color: #E9EAEF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mail-message .content{
+    border: 3px solid #000000;
+}
+.mail{
+    background-color: transparent;
+    margin-left: 15px;
+}
+.mail-theme{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.content{
+    width: 800px;
+    height: 200px;
+    background-color: #c9ddff;
+}
+.mails{
+    margin: 15px 15px 15px 15px;
+}
+.mail-content .content{
+    border-radius: 20%;
+}
+input[type='button']{
+    font-size: 12px;
+    margin-right: 10%;
+    font-weight: bold;
+    border-radius: 70px;
+    cursor: pointer;
+    width: 5%;
+}
+textarea{
+    resize: none;
+}

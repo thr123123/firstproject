@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script>
+        function check(){
+            alert("检查")
+            return false;
+        }
+    </script>
+    <script src="../js/jquery-3.6.3.js"></script>
+</head>
+<body>
+    <form onsubmit="return check();">
+        <input type="submit" name="test" value="检查">
+    </form>
+</body>
+</html>
